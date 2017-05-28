@@ -1,28 +1,29 @@
-h1{color: blue}
-
-
-#foo{
-	text-align: center;
-	font-size: 18px;
-	
-    border-style: solid;
-    border-width: 5px;
-    border-color: gray;
-}
-
-h2{
+h1,h2{
 	font-size:50px;
-	color: green;
+	color: #03C3D1;
 }
-
 p{
 	font-size: 20px;
 	text-align:center;
+	color: #2F4639;
 }
 
-div {
-    width: 1520px;
-     padding: 10px;
-     border: 5px solid blue;
-     margin: 0; 
-} 
+
+@media (max-width: 575px) {
+  h1,h2,p {
+    color: #0606FB;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 576px) {
+   p {
+    color: #3B0B0B;
+    font-size: 25px;
+  }
+  h1 {
+    color: #B40404;
+    font-size: 35px;
+  }
+
+}
